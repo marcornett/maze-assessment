@@ -80,6 +80,11 @@ let playerPosition = {
     y: 9
 }
 
+let mazeExitLocation ={
+    x: 20,
+    y: 8
+}
+
 document.addEventListener('keydown', playerMove)
 function playerMove(event){
     let expr = event.code
@@ -124,3 +129,11 @@ function playerMove(event){
             break;
     }
 }
+
+function winner(){
+    if (playerPosition === mazeExitLocation){
+        console.log('winner')
+    }
+}
+
+winner()

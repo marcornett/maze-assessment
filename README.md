@@ -1,3 +1,5 @@
-Help from Randy's demo
-Help from group chat
-Help from Travis Anderson with select datasets 
+
+
+Help from Randy's demo in understanding how to make the maze.
+Help from group chat talking about datasets.
+Help from Travis Anderson with selecting datasets.
