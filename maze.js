@@ -107,7 +107,7 @@ function playerMove(event){
         case 'ArrowLeft':
             // Selects the div to the left
             xPosition = document.querySelector(`[data-x="${parseInt(playerPosition["x"])-1}"][data-y="${parseInt(playerPosition["y"])}"]`)
-            if(yPosition.className !== 'cell wall'){
+            if(xPosition.className !== 'cell wall'){
                 xPosition.appendChild(playerToken)
                 // Subtracts 1 from the global array keeping track of the player
                 playerPosition["x"]--
@@ -116,9 +116,11 @@ function playerMove(event){
         case 'ArrowRight':
             // Selects the div to the left
             xPosition = document.querySelector(`[data-x="${parseInt(playerPosition["x"])+1}"][data-y="${parseInt(playerPosition["y"])}"]`)
+            if(xPosition.className !== 'cell wall'){
             xPosition.appendChild(playerToken)
             // Subtracts 1 from the global array keeping track of the player
             playerPosition["x"]++
+            }
             break;
     }
 }

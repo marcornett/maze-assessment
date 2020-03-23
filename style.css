@@ -1,9 +1,9 @@
 :root{
     box-sizing: border-box;
 }
-#main{
-    height: 500px;
-    background-color: gray;
+#maze{
+    width: 1100px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -30,8 +30,8 @@
 
 .playerToken{
     flex-grow: 1;
-    width: 46px;
-    height: 46px;
+    width: 100%;
+    height: 100%;
     margin: 2px;
     border-radius: 50%;
     background-color: red;
