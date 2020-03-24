@@ -128,12 +128,12 @@ function playerMove(event){
             }
             break;
     }
+    winner()
 }
-
 function winner(){
-    if (playerPosition === mazeExitLocation){
+    if (playerPosition.x == mazeExitLocation.x && playerPosition.y == mazeExitLocation.y){
         console.log('winner')
+        let winnerHeader = document.querySelector('#winner')
+        winnerHeader.style.opacity = 100
     }
 }
-
-winner()

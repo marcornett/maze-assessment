@@ -1,6 +1,23 @@
 :root{
     box-sizing: border-box;
 }
+header{
+    text-align: center;
+}
+
+#maze-header{
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+#winner{
+    font-size: 60px;
+    color: red;
+    opacity: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 #maze{
     height: ;
     display: flex;
